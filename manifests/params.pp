@@ -12,4 +12,7 @@ class ssh::params {
       fail("${facts['operatingsystem']} is not supported" )
     }
   }
+  
+  $permit_root_login = false
+
 }
